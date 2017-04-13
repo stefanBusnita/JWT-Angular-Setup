@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Your token authentication</h2>
+                <ul class="nav navbar-right panel_toolbox">
+
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Username</th>
+                            <th>ROLES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>{{authDetails.username}}</td>
+                            <td>{{authDetails.authorities}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Simple resource permissions test (Check console for more information)</h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+
+                <form class="form-horizontal form-label-left" novalidate="">
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-4">
+                            <button class="btn btn-primary" ng-click="pageFunctions.getUserData()">Try user data</button>
+                            <button class="btn btn-primary" ng-click="pageFunctions.getGuestData()">Try guest data</button>
+                            <button class="btn btn-success" ng-click="pageFunctions.getAdminData()">Try admin data</button>
+                            <button class="btn btn-success" ng-click="pageFunctions.refreshToken()">Refresh token</button>
+                            <button class="btn btn-danger" ng-click="pageFunctions.logout()">LOGOUT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
